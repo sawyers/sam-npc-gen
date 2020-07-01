@@ -1,0 +1,105 @@
+{
+  "tbl_101": [
+    {
+      "race": "human",
+      "desc": "The most common race in many game systems. If one is familiar with modern examples of humanity, then one has a good basis for humanity when found anywhere or anywhen else."
+    },
+    {
+      "race": "elf",
+      "desc": "A member of a race of beautiful humanoids, often referred to as an elder race, possibly a branch of faery. They are associated with forests, have a natural affinity for magic and life-spans far longer than humans. Elves can be aloof and distant, and may consider other races to be their inferior."
+    },
+    {
+      "race": "dwarf",
+      "desc": "Stalwart, short, stocky humanoids, with long beards and dour personalities. They are longer-lived than men; are excellent metal and stone workers; reknowned as fighters; and often found in underground cities. Dwarves can be gruff, grumpy, gloomy or rowdy, often trusting none but themselves."
+    },
+    {
+      "race": "halfling",
+      "desc": "Barely waist-high on humans, this is a pleasant race of sturdy farmers and shopkeepers who feel more comfortable with their furry feet propped up in front of a fireplace than anywhere else."
+    },
+    {
+      "race": "half elf",
+      "desc": "A human and elf crossbreed. Combines the vitality of humanity with elvenkind's beauty and eldritch nature. They are likeable folk, but are often outcasts, percieved as different in an unacceptable way."
+    },
+    {
+      "race": "beastman",
+      "desc": "Part man, part beast. Includes minotaurs, centaurs, satyrs, fauns, and goatmen. A beast man's personality reflects its bestial nature. Minotaurs rush headlong into things, centaurs have the nobility (or stupidity) associated with horses, goatmen and satyrs have certain appetites."
+    },
+    {
+      "race": "reptileman",
+      "desc": "Primitive humanoid lizard-like creatures who often dwell in swamps and marshes. May be degenerate survivors of an ancient races. Includes dragon and serpent men (who are usually evil). Of all the given races, reptilemen are the most alien. They have exotic mannerisms and, wierd, unexplainable behaviour."
+    },
+    {
+      "race": "orc",
+      "desc": "A degenerate humanoid race, possibly an evil offshoot of elf kind. Noted for vile habits, coarse manners, and rough way of life, orcs are cruel, selfcentered and deceitful, always in fear of being punished for every action"
+    },
+    {
+      "race": "half orc",
+      "desc": "A crossbreed of human and orc. May look nearly human, but often partake of the orc's baser nature, with a tendency towards evil - coarse and callous, but tempered with human emotion and logic."
+    }
+  ],
+  //   "tbl_201 : [
+  //     { 
+  //       "level" : "nomad",
+  //       "desc" : "Nomads rely heavily on livestock that can move as seasons and resources dictate and are rarely agricultural. Most Nomads are mounted or use beasts of burden to transport belongings. Nomads organize along family group lines, do not settle permanently, and do not develop abstract writing beyond the level of pictographs. In most Nomad tribes and clans, all adult males are warriors. The Nomads may also be skilled in other crafts or professions (rarely metal-working), but skill in combat is a necessity for survival. Examples of historic Nomadic cultures include: Bedouins, ancient Huns, Gypsies, Sioux and other plains American Indians and Afghan shepherds. Nomad cultures out of fiction include J. R. R. Tolkein's Easterlings and Michael Moorcock's Flamebringers.",
+  //       "skills": [ { "riding" : 4 }, { "weapons": 3 }, { "wilderness survival" : 4 }, { "urban survival" : 1 }  ],
+  //       "gear" : "horse",
+  //       "roleplay": "Like Primitives, Nomads rely strongly on tradiI tion. They may have wanderlust and can become uncomfortable when tied down to one locale. A Nomad will always feel out of place in a city and often distrust those who live in them. Nomads retain some of the Primitives' superstitious nature. A Nomad character may have a kind of wild vitality, a lust for life I that has been lost by the civilized."
+  //     },
+  //     {  
+  //       "level": "barbarian", 
+  //       "desc" : "Barbarians are generally thought of as crude and semiliterate. In fact, they are not. Barbarian cultures are dynamic, often highly educated societies with a keen sense of propriety and law and order. In a sense, they are pre-Civilized - organized, but not yet developed (or degenerated) to the point where powerful central governments are needed. They normally have a solid economy with defined division of labor (occupational specialization). Organized religion is often a central pillar of their society (and may dominate it). Barbarians are generally led by strong charismatic warriors, but much of the people are governed by extended family groupings such as clans. Like the Nomads, most adult males are warriors in addition to any other profession that they follow (although, like the Vikings, they may put this skill to work pillaging as opposed to warring). They may live in small cities, which are often not much more than semipermanent camps. Examples of historical Barbarian cultures include: feudal Europe (period of Charlemagne), Gauls, Vikings, pre-19th century Iroquois and Cherokee Indian tribes. Fictional Barbarians include J. R. R. Tolkein's Rohirrim, Robert E. Howard's Cimmerians and Vanir, and Raymond Feist's Moredhel.",
+  //       "skills" : [ { "hand weapon": 3 }, { "ranged weapon" : 3 }, { "urban or wilderness survival" : "5/1" }  ]",
+  //       "gear" : [ "hand weapon", "missile weapon" ],
+  //       "roleplay" : "Like the Nomads, Barbarians live life with gusto. They live, love, fight, eat and drink like there may be no tomorrow. Barbarians adapt well to Civilized cultures. A Barbarian character might easily be subject to great emotions, such a deep depressions, berserk fighting moods, and exuberant joy. They are often frank and open about their feelings."
+  //     },
+  //     { 
+  //       "level" : "civilized",
+  //       "desc" : "Civilized cultures are most often noted for central governments (which seem to exist solely for the purpose of collecting taxes) and large cities and stocked with the dubious benefits of civilization - table manners, royal dynasties, wizards, professional thieves, naval warfare, civil engineering and of course, tax accountants. The hereditary warrior classes have become landed gentlefolk as knights and samuri are replaced by paid soldiery. Historical examples include: Persian and Early Roman Empires, imperial China, Selenium kingdom, dynastic Egypt, feudal Japan, the lncan empire. Fictional civilized cultures include: J. R. R. Tolkein's Gondoreans, Raymond Feist's Kingdom of the Isles, and Robert E. Howard's Aquiloneans.",
+  // Gameplay Benefits: A civilized character has a 50%
+  // chance to have develop a hobby. Determine the type of hobby
+  // on Table 427: Hobbies. If a Civilized character later changes to
+  // a Barbarian or Nomad Culture, he or she will be able to live as if
+  // he or she were one Social Status level higher and gain that
+  // Culture's survival skills.
+  // Survival: Choose either Urban or Wilderness, but
+  // character initially has Rank 2 ability in either environment.
+  // Literacy: A character from a Civilized Culture has a 30%
+  // chance to be literate in his or her native language.
+  // Roleplay: Civilized peoples classically take a dim view of
+  // lesser cultures, often viewing them as less than human - especially true for those of Well-to-Do and higher Social Status.
+  // "Helpful" Civilized folk may feel a need to bring Civilization to
+  // lower Culture levels. A civilized character usually feels most at
+  // home in a city and will be aware of what a city has to offer.
+  // Decadent Civilized Cultures
+  // These are Civilized Cultures past the peak of their prime.
+  // Decay has begun to set in at all levels and the people have
+  // become hedonistic and jaded. The government seems to have
+  // become self-perpetuating and careless of the people's needs.
+  // Although government support of the Poor is predominant,
+  // previously common civil liberties and services begin to
+  // disappear. Inflation is often rampant. Historical examples
+  // include: the latter centuries of the Roman empire. Fictional
+  // examples of decadent Culture include: Robert E. Howard's
+  // Stygians, Michael Moorcock's Melniboneans, Fritz Leiber's
+  // Lankhmarites and Raymond Feist's Tsuranuanni of Kelewan.
+  // Gameplay Benefits: Characters from Decadent Civilizations have an increased resistance to occurrences that
+  // might cause insanity (such as exposure to horror, violence or
+  // drugs). Any chance of going insane is reduced by 10%. Some
+  // might say this is because such characters are already insane.
+  // Survival Skills: Urban - Rank 3 ability in cities (Urban)
+  // and Rank 1 survival skills in the Wilderness.
+  // Literacy: A character from a Decadently Civilized Culture
+  // has only a 20% chance to be literate in his or her native
+  // language and a 10% chance to be literate in the language of
+  // another Culture or country.
+  // Roleplay: It is not uncommon for citizens of these
+  // Cultures (even the lowliest slaves and beggars) to believe that
+  // their Culture is not only at its dynamic prime, but that it and they
+  // are vastly superior to everything else. A character from this
+  // Culture could easily have a haughty attitude, looking down his
+  // or her nose at everything. Simple pleasures might easily bore a
+  // person from this Culture. On the other hand, they could be so
+  // foreign to the character that they intrigue him or her to no end. 
+  //     }
+  //   ]
+}

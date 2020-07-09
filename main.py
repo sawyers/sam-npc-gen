@@ -1,6 +1,9 @@
 import random
-import json
 import textwrap
+from tinydb import TinyDB, Query
+
+wrapper = textwrap.TextWrapper(width=60)
+db = TinyDB("./legends.json")
 
 
 class char:
@@ -14,7 +17,7 @@ def roll(roll, modify=0):
     i = 1
     total = 0
     while i <= to_roll:
-        total += random.randint(1, size)
+        total += random.randint(1, size)  # nosec
         i += 1
     total += modify
     if total < 0:
@@ -30,16 +33,15 @@ def base_stats():
     return work_stats
 
 
-# -----------------------
-# with open('legends.dat', "r") as f:
-#  data = json.load(f)
-# f.close()
+def char_race(roll, modify=0):
+    table = db.table("101")
+    result = Query()
+    result = table.search((result.log <= roll) & (race.high >= roll))[0]
 
-wrapper = textwrap.TextWrapper(width=60)
 
 my_char = char()
 my_char.stats = base_stats()
-# my_char.race, my_char.race_desc = char_race()
+my_char.race, my_char.race_desc = char_race(roll("1d20"))
 # my_char.culture, my_char.cmod = cmod()
 
 # print("Race: %s\n" % my_char.race)

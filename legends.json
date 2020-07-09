@@ -1,7 +1,10 @@
-{"101":
-  {
+{
+  "101": {
     "1": {
-      A human and elf crossbreed. Combines the vitality of humanity with elvenkind's beauty and eldritch nature. They are likeable folk, but are often outcasts, percieved as different in an unacceptable way.
+      "low": 15,
+      "high": 16,
+      "race": "human",
+      "desc": "A human and elf crossbreed. Combines the vitality of humanity with elvenkind's beauty and eldritch nature. They are likeable folk, but are often outcasts, perceived as different in an unacceptable way."
     },
     "2": {
       "low": 15,
@@ -35,8 +38,7 @@
       "next_table": "101a"
     }
   },
-  "101a":
-  {
+  "101a": {
     "1": {
       "low": 1,
       "high": 1,

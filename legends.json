@@ -41,25 +41,25 @@
   "101a": {
     "1": {
       "low": 1,
-      "high": 1,
+      "high": 3,
       "race": "beastman",
       "desc": "Part man, part beast. Includes minotaurs, centaurs, satyrs, fauns, and goatmen. A beast man's personality reflects its bestial nature. Minotaurs rush headlong into things, centaurs have the nobility (or stupidity) associated with horses, goatmen and satyrs have certain appetites."
     },
     "2": {
-      "low": 1,
-      "high": 1,
+      "low": 4,
+      "high": 5,
       "race": "reptileman",
       "desc": "Primitive humanoid lizard-like creatures who often dwell in swamps and marshes. May be degenerate survivors of an ancient races. Includes dragon and serpent men (who are usually evil). Of all the given races, reptilemen are the most alien. They have exotic mannerisms and, weird, unexplainable behavior."
     },
     "3": {
-      "low": 1,
-      "high": 1,
+      "low": 6,
+      "high": 6,
       "race": "orc",
       "desc": "A degenerate humanoid race, possibly an evil offshoot of elf kind. Noted for vile habits, coarse manners, and rough way of life, orcs are cruel, self-centered and deceitful, always in fear of being punished for every action"
     },
     "4": {
-      "low": 1,
-      "high": 1,
+      "low": 7,
+      "high": 10,
       "race": "half orc",
       "desc": "A crossbreed of human and orc. May look nearly human, but often partake of the orc's baser nature, with a tendency towards evil - coarse and callous, but tempered with human emotion and logic."
     }

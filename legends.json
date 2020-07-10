@@ -64,7 +64,7 @@
       "desc": "A crossbreed of human and orc. May look nearly human, but often partake of the orc's baser nature, with a tendency towards evil - coarse and callous, but tempered with human emotion and logic."
     }
   },
-    "102": {
+  "102": {
     "1": {
       "low": 1,
       "high": 1,
@@ -148,7 +148,7 @@
       "low": 99,
       "high": 107,
       "status": "Nobility"
-    }     
+    }
   },
   "114b": {},
   "318a": {},

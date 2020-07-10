@@ -12,6 +12,7 @@ db = TinyDB("./legends.json")
 
 
 genders = ["Female", "Male"]
+stats_lst = ["str", "dex", "int", "con", "cha", "wis"]
 
 
 def roll(to_roll, high, modifier=0):
@@ -30,33 +31,27 @@ def race_search():
     race_roll = roll(1, 20)
     my_race = ""
     my_desc = ""
-    table = db.table("101")
+
+    if race_roll == 20:
+        table = db.table("101a")
+        race_roll = roll(1, 10)
+    else:
+        table = db.table("101")
+
     result = Query()
-    result = table.search((result.low <= race_roll) & (result.high >= race_roll))
-    print(result)
-    return my_race, my_desc
+    result = table.search((result.low <= race_roll) & (result.high >= race_roll))[0]
+
+    return result["race"], result["desc"]
 
 
-print("Gender: %s\n" % genders[roll(1, len(genders), -1)])
 race, desc = race_search()
 
-
-# def base_stats():
-
-#     work_stats = {}
-#     stats_lst = ["str", "dex", "int", "con", "cha", "wis"]
-#     for i in stats_lst:
-#         work_stats[i] = roll("3d6")
-#     return work_stats
+print("Race: {0}\n".format(race))
+print("Race Descriptions: \n\n{0}\n".format(wrapper.fill(text=desc)))
+print("Gender: {0}\n".format(genders[roll(1, len(genders), -1)]))
+print("Stats:")
+for i in stats_lst:
+    print("\t{0}:\t{1}".format(i.capitalize(), roll(3, 6)))
 
 
-# my_char.race, my_char.race_desc = char_race(roll("1d20"))
-# # my_char.culture, my_char.cmod = cmod()
-
-# # print("Race: %s\n" % my_char.race)
-# # print("Race Descriptions: \n\n\t%s\n" % wrapper.fill(text=my_char.race_desc))
-# print("Stats:")
-# for i in my_char.stats:
-#     tmp_stat_name = i.capitalize()
-#     tmp_stat_value = my_char.stats[i]
 #     print("\t{0} : {1}".format(tmp_stat_name, tmp_stat_value))

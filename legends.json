@@ -63,5 +63,94 @@
       "race": "half orc",
       "desc": "A crossbreed of human and orc. May look nearly human, but often partake of the orc's baser nature, with a tendency towards evil - coarse and callous, but tempered with human emotion and logic."
     }
-  }
+  },
+    "102": {
+    "1": {
+      "low": 1,
+      "high": 1,
+      "level": "Primitive",
+      "cumod": -3,
+      "native": "Wilderness",
+      "desc": "Primitives do not read and write their own language and do not form significant permanent settlements. The chief industry of Primitives is the procurement of food, usually by hunting (traditionally a male role) and gathering (traditionally the task of women, children and the elderly). They do not work metal and organized farming is still rare. Political units are the family and the clan. Rulers are the most powerful hunters of the group. The elderly are revered for their wisdom. Historical Primitives include most prehistoric peoples, many Amerindians, Arctic tribes, Australian aborigines, African bushmen and pygmies, Amazon jungle tribes, Pacific Islanders, New Guinea natives, and Picts. Fictional Primitive cultures include J. R. R. Tolkein's Wood Woses, Michael Moorcock's natives of Oin and Yu, and Robert E. Howard's Hyborian Picts.",
+      "rp": "Characters born into Primitive cultures tend to be superstitious. Tradition is important to them. They are often distrusting of 'higher' levels of-culture, viewing their accomplishments as evil. A Primitive character will probably be less willing to accept the 'benefits' of civilization and may even suffer from exposure to civilized cultures. Primitive characters are often viewed as stupid, but are usually quite clever - they lead hard lives and sharp wits are necessary for daily survival. "
+    },
+    "2": {
+      "low": 2,
+      "high": 3,
+      "level": "Nomad",
+      "cumod": 0,
+      "native": "Wilderness",
+      "desc": "Nomads rely heavily on livestock that can move as seasons and resources dictate and are rarely agricultural. Most Nomads are mounted or use beasts of burden to transport belongings. Nomads organize along family group lines, do not settle permanently, and do not develop abstract writing beyond the level of pictographs. In most Nomad tribes and clans, all adult males are warriors. The Nomads may also be skilled in other crafts or professions (rarely metal-working), but skill in combat is a necessity for survival. Examples of historic Nomadic cultures include: Bedouins, ancient Huns, Gypsies, Sioux and other plains American Indians and Afghan shepherds. Nomad cultures out of fiction include J. R. R. Tolkein's Easterlings",
+      "rp": "Like Primitives, Nomads rely strongly on tradition. They may have wanderlust and can become uncomfortable when tied down to one locale. A Nomad will always feel out of place in a city and often distrust those who live in them. Nomads retain some of the Primitives' superstitious nature. A Nomad character may have a kind of wild vitality, a lust for life I that has been lost by the civilized. "
+    },
+    "3": {
+      "low": 4,
+      "high": 6,
+      "level": "Barbarian",
+      "cumod": 2,
+      "native": "Wilds/Urban",
+      "desc": "Barbarians are generally thought of as crude and semiliterate. In fact, they are not. Barbarian cultures are dynamic, often highly educated societies with a keen sense of propriety and law and order. In a sense, they are pre-Civilized - organized, but not yet developed (or degenerated) to the point where powerful central governments are needed. They normally have a solid economy with defined division of labor (occupational specialization). Organized religion is often a central pillar of their society (and may dominate it). Barbarians are generally led by strong charismatic warriors, but much of the people are governed by extended family groupings such as clans. Like the Nomads, most adult males are warriors in addition to any other profession that they follow (although, like the Vikings, they may put this skill to work pillaging as opposed to warring). They may live in small cities, which are often not much more than semipermanent camps. Examples of historical Barbarian cultures include: feudal Europe (period of Charlemagne), Gauls, Vikings, pre-19th century Iroquois and Cherokee Indian tribes. Fictional Barbarians include J. R. R. Tolkein's Rohirrim, Robert E. Howard's Cimmerians and Vanir, and Raymond Feist's Moredhel.",
+      "rp": "Like the Nomads, Barbarians live life with gusto. They live, love, fight, eat and drink like there may be no tomorrow. Barbarians adapt well to Civilized cultures. A Barbarian character might easily be subject to great emotions, such a deep depressions, berserk fighting moods, and exuberant joy. They are often frank and open about their feelings."
+    },
+    "4": {
+      "low": 7,
+      "high": 9,
+      "level": "Civilized",
+      "cumod": 4,
+      "native": "Wilds/Urban",
+      "desc": "Civilized cultures are most often noted for central governments (which seem to exist solely for the purpose of collecting taxes) and large cities and stocked with the dubious benefits of civilization - table manners, royal dynasties, wizards, professional thieves, naval warfare, civil engineering and of course, tax accountants. The hereditary warrior classes have become landed gentlefolk as knights and samurai are replaced by paid soldiery. Historical examples include: Persian and Early Roman Empires, imperial China, Selenium kingdom, dynastic Egypt, feudal Japan, the lncan empire. Fictional civilized cultures include: J. R. R. Tolkein's Gondoreans, Raymond Feist's Kingdom of the Isles, and Robert E. Howard's Aquiloneans.",
+      "rp": "Civilized peoples classically take a dim view of lesser cultures, often viewing them as less than human - especially true for those of Well-to-Do and higher Social Status. 'Helpful' Civilized folk may feel a need to bring Civilization to lower Culture levels. A civilized character usually feels most at home in a city and will be aware of what a city has to offer."
+    },
+    "5": {
+      "low": 10,
+      "high": 10,
+      "level": "Civilized-Decadent",
+      "cumod": 7,
+      "native": "urban",
+      "desc": "These are Civilized Cultures past the peak of their prime. Decay has begun to set in at all levels and the people have become hedonistic and jaded. The government seems to have become self-perpetuating and careless of the people's needs. Although government support of the Poor is predominant, previously common civil liberties and services begin to disappear. Inflation is often rampant. Historical examples include: the latter centuries of the Roman empire. Fictional examples of decadent Culture include: Robert E. Howard's Stygians, Michael Moorcock's Melniboneans, Fritz Leiber's Lankhmarites and Raymond Feist's Tsuranuanni of Kelewan.",
+      "rp": "It is not uncommon for citizens of these Cultures (even the lowliest slaves and beggars) to believe that their Culture is not only at its dynamic prime, but that it and they are vastly superior to everything else. A character from this Culture could easily have a haughty attitude, looking down his or her nose at everything. Simple pleasures might easily bore a person from this Culture. On the other hand, they could be so foreign to the character that they intrigue him or her to no end."
+    }
+  },
+  "103": {
+    "1": {
+      "low": -2,
+      "high": 12,
+      "status": "Destitute",
+      "desc": "These people are considered the dregs of society. They own no property and may have no fixed home. Some perform no real work and are often unemployable. Others are in bond to a master and live at his whim. Still more, especially Primitives, barely live off what meager bounty the land provides. The chief industry of this class is foraging and scavenging. This is survival level - No luxuries. Money is rare for the destitute and all income goes toward merely staying alive. Includes non-guild beggars and other street people, serfs, sharecroppers, rural bandits, some slaves and unfortunate primitives",
+      "rp": "Characters from this social status may believe that they have no real control over their own lives and exist merely at the whim of others, whether it be the gods, the wealthy or just anyone who is not destitute. This attitude may be expressed as hopelessness, or become hatred and revenge against either society or those believed to be the cause of misfortune. A destitute person could easily be a street punk or a goodly person with a heart of gold and a hopeless sigh."
+    },
+    "2": {
+      "low": 13,
+      "high": 40,
+      "status": "Poor"
+    },
+    "3": {
+      "low": 41,
+      "high": 84,
+      "status": "Comfortable"
+    },
+    "4": {
+      "low": 85,
+      "high": 85,
+      "status": "re-roll"
+    },
+    "5": {
+      "low": 86,
+      "high": 94,
+      "status": "Well-to-do"
+    },
+    "6": {
+      "low": 95,
+      "high": 98,
+      "status": "Wealthy"
+    },
+    "7": {
+      "low": 99,
+      "high": 107,
+      "status": "Nobility"
+    }     
+  },
+  "114b": {},
+  "318a": {},
+  "318": {}
 }

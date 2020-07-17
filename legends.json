@@ -122,35 +122,188 @@
     "2": {
       "low": 13,
       "high": 40,
-      "status": "Poor"
+      "status": "Poor",
+      "desc": "Poor people have comparatively very low income. They usually do not or cannot own property. Homes are usually of lesser quality, sometimes due to uncaring landlords who may also be the poor person's employer. Luxuries often include nice food, heat in the winter, pets and clean water. In some scoieties, the poor are but a steap above slaves. Includes most nonleader nomads, primitives, pesants, uncivilized warriors, most laborers, public welfare recipients, some land-owning farmers, some craftsmen, your or partly-skilled urban thieves, apprentices, office clerks and most professional soldiers.",
+      "rp": "The poor must work hard to keep what they have, otherwise they would be destitute. A poor character might always be concerned about having enough to get by; but the poor usually have hope - that they or their children might have a better life if they can work hard and long enough. Although a character from this social level may long for a better life, they could be satisified with the way things are. Hard work is good and the rewards enjoyable. Of all social levels, the poor are most likely to strongly emphasize religious matters in their lives or be superstitious"
     },
     "3": {
       "low": 41,
       "high": 84,
-      "status": "Comfortable"
+      "status": "Comfortable",
+      "desc": "This is the middle class of any culture, regardless of the average wealth of its citizens. These folk usually live in clean, nicely apportioned homes or apartments, often in better neighborhoods. They eat regularly and occasionally very well. Children are often educated by tutors. Luxuries include warm houses, good food, the ability to hire menial services, nice clothing, and family heirloom books. They may own conservative forms of transport - a buggy or horse. Includes impoverished nobility, university professors, scribes, some craftsmen, highlyskilled laborers, lower government officials, lower-ranking military officers, lesser priests and magicians, shopkeepers, and prominent warriors and lesser chieftains.",
+      "rp": "Folk from this Social Status are considered to represent the mainstream of their Culture's beliefs and attitudes."
     },
     "4": {
       "low": 85,
       "high": 85,
-      "status": "re-roll"
+      "status": "re-roll",
+      "desc": "",
+      "rp": ""
     },
     "5": {
       "low": 86,
       "high": 94,
-      "status": "Well-to-do"
+      "status": "Well-to-do",
+      "desc": "These are the upper end of the middle or merchant class in Barbarian and Civilized cultures. They typically own larger homes, have a household servant (a cook andlor maid), have private transportation, and travel abroad. They may own more than one home in more than one city. Their children are privately educated. Luxuries include elegant furnishings, artwork, libraries, parties, fine clothing, and occasional exotic foods. This class includes younger offspring of Nobility, successful craftsmen, high-ranking military officers, merchants, ship owners, successful magicians, priests of prominent religions, guild leaders, city officials, and Nomad and Barbarian chieftains.",
+      "rp": "Outward appearances are often the be-all and end-all of this Social Status and these folk may try to act like they are Wealthy. A strong tendency here to look on lower Social Statuses as something bordering on 'unclean' and to attempt to associate only with those of equal or higher status. Of all Social Statuses, Well-to-Do folk are probably the least tolerant of their children becoming adventurers ('What will the neighbors think?')."
     },
     "6": {
       "low": 95,
       "high": 98,
-      "status": "Wealthy"
+      "status": "Wealthy",
+      "desc": "These people are rich. They own large estates, have many servants, plush furnishings and large holdings of land. They usually make their money from real estate holdings, commodities trading and gouging poorer people. What most lower social levels see as luxuries, they take for granted. This class includes most titled nobility, merchant princes, high priests of rich cults, owners of very successful large companies, government leaders, very successful magicians, and leaders of criminal organizations.",
+      "rp": "A Wealthy character is accustomed to the finer things in life and may be uncomfortable in less-than-elegant surrounds. It may be hard for a Wealthy character to accept someone from a lower Social Status as an equal."
     },
     "7": {
       "low": 99,
       "high": 107,
-      "status": "Nobility"
+      "status": "Nobility",
+      "desc": "The character who rolls this is a member of a noble family, the aristocracy of the land. These folk have fancy titles, and are generally better off than their fellows (whom they often consider to be less than human). Follow the instructions below to select tittles, lands, kinships to other rulers and so on then return here. ",
+      "rp": "Nobles, by definition, are supposed to be better than other men, born to lead their lesser brethren. Even a Destitute Noble will consider himself to be better than others. The importance and role of Nobility within a Culture will vary with the Culture. They may be dynamic hereditary leaders, able to command men to their deaths, or pleasure-loving parasites who are tolerated only because their existance is traditional."
     }
   },
-  "114b": {},
+  "114b": {
+      "1": {
+      "low": 1,
+      "high": 1,
+      "status": "",
+      "desc": "Noted for personality",
+      "rp": ""
+    },
+    "2": {
+      "low": 2,
+      "high": 2,
+      "status": "",
+      "desc": "Unusual birth",
+      "rp": ""
+    },
+    "3": {
+      "low": 3,
+      "high": 3,
+      "status": "",
+      "desc": "Devotes time to a hobby",
+      "rp": ""
+    },
+    "4": {
+      "low": 4,
+      "high": 4,
+      "status": "Unusual item",
+      "desc": "",
+      "rp": ""
+    },
+    "5": {
+      "low": 5,
+      "high": 5,
+      "status": "",
+      "desc": "Creative and inventive, possibly even artistic",
+      "rp": ""
+    },
+    "6": {
+      "low": 6,
+      "high": 6,
+      "status": "",
+      "desc": "Extoic event spoken of often",
+      "rp": ""
+    },
+    "7": {
+      "low": 7,
+      "high": 7,
+      "status": "",
+      "desc": "Tels tails of a legendary lost treasure that gives vague hints regarding its location",
+      "rp": ""
+    },
+    "8": {
+      "low": 8,
+      "high": 8,
+      "status": "",
+      "desc": "Has obsession regarding something that happend or might happen",
+      "rp": ""
+    },
+    "9": {
+      "low": 9,
+      "high": 9,
+      "status": "",
+      "desc": "",
+      "rp": ""
+    },
+    "10": {
+      "low": 10,
+      "high": 10,
+      "status": "",
+      "desc": "",
+      "rp": ""
+    },
+    "11": {
+      "low": 11,
+      "high": 11,
+      "status": "",
+      "desc": "",
+      "rp": ""
+    },
+    "12": {
+      "low": 12,
+      "high": 12,
+      "status": "",
+      "desc": "",
+      "rp": ""
+    },
+    "13": {
+      "low": 13,
+      "high": 13,
+      "status": "",
+      "desc": "",
+      "rp": ""
+    },
+    "14": {
+      "low": 14,
+      "high": 14,
+      "status": "",
+      "desc": "",
+      "rp": ""
+    },
+    "15": {
+      "low": 15,
+      "high": 15,
+      "status": "",
+      "desc": "",
+      "rp": ""
+    },
+    "16": {
+      "low": 16,
+      "high": 16,
+      "status": "",
+      "desc": "",
+      "rp": ""
+    },
+    "17": {
+      "low": 17,
+      "high": 17,
+      "status": "",
+      "desc": "",
+      "rp": ""
+    },
+    "18": {
+      "low": 18,
+      "high": 18,
+      "status": "",
+      "desc": "",
+      "rp": ""
+    },
+    "19": {
+      "low": 19,
+      "high": 19,
+      "status": "",
+      "desc": "",
+      "rp": ""
+    },
+    "20": {
+      "low": 20,
+      "high": 20,
+      "status": "",
+      "desc": "",
+      "rp": ""
+    }
+  },
   "318a": {},
   "318": {}
 }

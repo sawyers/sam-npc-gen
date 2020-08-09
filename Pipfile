@@ -6,9 +6,11 @@ verify_ssl = true
 [dev-packages]
 pre-commit = "*"
 pylint = "*"
+bandit = "*"
+tinydb = "*"
+black = "*"
 
 [packages]
-tinydb = "*"
 
 [requires]
 python_version = "3.8"

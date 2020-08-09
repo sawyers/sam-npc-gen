@@ -3,8 +3,10 @@ repos:
     rev: "v2.3.0"
     hooks:
       - id: check-yaml
+        exclude: ./*/template\.(json|yml|yaml)$
       - id: end-of-file-fixer
       - id: trailing-whitespace
+      - id: detect-aws-credentials
   - repo: https://github.com/psf/black
     rev: "19.10b0"
     hooks:
@@ -13,8 +15,14 @@ repos:
     rev: "1.6.2" # Update me!
     hooks:
       - id: bandit
+        args: [--skip, "B101"]
   - repo: https://github.com/prettier/prettier
     rev: "1.19.1"
     hooks:
       - id: prettier
         args: [--prose-wrap=always, --print-width=88]
+  - repo: https://github.com/awslabs/cfn-python-lint
+    rev: v0.34.1 # The version of cfn-lint to use
+    hooks:
+      - id: cfn-python-lint
+        files: ./*/template\.(json|yml|yaml)$

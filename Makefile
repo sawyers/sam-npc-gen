@@ -12,22 +12,27 @@ help:
 	@echo "		run project"
 
 
-prep-win:
-	choco install python --version=3.8.0
-	choco install wget
-	choco install awscli
-	python -m pip install pipenv --user
+init:
+	python3 -m pip install pipenv --user
 	pipenv install --dev
 	pipenv run pre-commit install
-	wget https://github.com/awslabs/aws-sam-cli/releases/latest/download/AWS_SAM_CLI_64_PY3.msi?raw=true -O AWS_SAM_CLI_64_PY3.msi
-	msiexec /i "AWS_SAM_CLI_64_PY3.msi"
-	del AWS_SAM_CLI_64_PY3.msi
+	curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+	unzip -o awscliv2.zip && sudo ./aws/install --update && rm awscliv2.zip
+	rm -rf aws
+	curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh | /bin/bash
+	#test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
+	#test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+	#test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
+	#echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
+	brew --version
+	brew tap aws/tap
+	brew install aws-sam-cli
 	sam --version
-	python --version
+	python3 --version
 
 
 lint:
-	pre-commit run --all-files
+	pre-commit run
 
 
 test-win:

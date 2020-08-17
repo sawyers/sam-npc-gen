@@ -6,9 +6,7 @@ verify_ssl = true
 [dev-packages]
 pre-commit = "*"
 pylint = "*"
-bandit = "*"
 tinydb = "*"
-black = "*"
 
 [packages]
 

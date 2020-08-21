@@ -20,13 +20,4 @@ repos:
     rev: "1.6.2" # Update me!
     hooks:
       - id: bandit
-  - repo: https://github.com/prettier/prettier
-    rev: "1.19.1"
-    hooks:
-      - id: prettier
-        args: [--prose-wrap=always, --print-width=88]
-  - repo: https://github.com/aws-cloudformation/cfn-python-lint
-    rev: v0.34.1 # The version of cfn-lint to use
-    hooks:
-      - id: cfn-python-lint
-        files: template.yaml
+

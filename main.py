@@ -8,7 +8,7 @@ import textwrap
 from tinydb import TinyDB, Query
 
 wrapper = textwrap.TextWrapper(width=60)
-db = TinyDB("./legends.json")
+db = TinyDB("data/legends.json")
 
 
 genders = ["Female", "Male"]
@@ -43,15 +43,41 @@ def race_search():
 
     return result["race"], result["desc"]
 
+class NpcCard(object):
+    gender = ''
+    race = ''
+    race_desc = ''
+    attributes = {}
+    
+    def __init__(self):
+        self.gender = genders[roll(1, len(genders), -1)]
+        for i in stats_lst:
+            self.attributes[i] = roll(3, 6)
+        self.race, self.race_desc = race_search()
+    
+    def print(self):
+        card = '''\
+        Race: {}
+        Racial description: {}
+        Gender: {}
 
-race, desc = race_search()
+            Str: {}
+            Dex: {}
+            Con: {}
+            Int: {}
+            Wis: {}
+            Cha: {}
 
-print("Race: {0}\n".format(race))
-print("Race Descriptions: \n\n{0}\n".format(wrapper.fill(text=desc)))
-print("Gender: {0}\n".format(genders[roll(1, len(genders), -1)]))
-print("Stats:")
-for i in stats_lst:
-    print("\t{0}:\t{1}".format(i.capitalize(), roll(3, 6)))
+        Background:
+
+        '''.format(self.race, self.race_desc, self.gender, self.attributes['str'], self.attributes['dex'], 
+            self.attributes['con'], self.attributes['int'], self.attributes['wis'], self.attributes['cha'])
+
+        print(textwrap.dedent(card))
 
 
-#     print("\t{0} : {1}".format(tmp_stat_name, tmp_stat_value))
+if __name__ == "__main__":
+    print("Starting NPC maker")
+    NPC = NpcCard()
+    NPC.print()
+

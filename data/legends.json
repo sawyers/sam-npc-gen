@@ -4,7 +4,7 @@
       "low": 1,
       "high": 14,
       "race": "human",
-      "desc": "The most common race in many game systems. If one is familiar with modern examples of humanity, then one has a good basis for humanity when found anywhere or anywhen else"
+      "desc": "The most common race in many game systems."
     },
     "2": {
       "low": 15,
@@ -100,7 +100,7 @@
       "cumod": 7,
       "desc": "These are Civilized Cultures past the peak of their prime. Decay has begun to set in at all levels and the people have become hedonistic and jaded. The government seems to have become self-perpetuating and careless of the people's needs. Although government support of the Poor is predominant, previously common civil liberties and services begin to disappear. Inflation is often rampant."
     }
-  },
+  },  
   "103": {
     "1": {
       "low": -2,
@@ -153,33 +153,6 @@
     }
   }, 
   "114B": {},
-  "318A": {
-    "1": {
-      "low": 1,
-      "high": 50,
-      "result": "No Personality Trait develops"
-    },
-    "2": {
-      "low": 51,
-      "high": 65,
-      "result": "318B"
-    },
-    "3": {
-      "low": 66,
-      "high": 80,
-      "result": 647
-    },
-    "4": {
-      "low": 81,
-      "high": 95,
-      "result": 648
-    },
-    "5": {
-      "low": 96,
-      "high": 100,
-      "result": 649
-    }
-  },
   "318B": {
     "1": {
       "roll": 2,
@@ -338,7 +311,339 @@
       "result": "Atheistic: denies existence of the supernatural"
     } 
   },
-  "647": {},
-  "648": {},
-  "649": {}
+  "647": {
+    "1": {
+      "roll": 2,
+      "result": "Optimist: always see the good side of things."
+    },
+    "2": {
+      "roll": 3,
+      "result": "Altruist: selfless concern for others' welfare."
+    },
+    "3": {
+      "roll": 4,
+      "result": "Helpful: helps others in need."
+    },
+    "4": {
+      "roll": 5,
+      "result": "Kindly: warmhearted and friendly."
+    },
+    "5": {
+      "roll": 6,
+      "result": "Careful: cautious in thought and deed"
+    },
+    "6": {
+      "roll": 7,
+      "result": "Considerate: thinks of others' feelings."
+    },
+    "7": {
+      "roll": 8,
+      "result": "Sober: serious, plain-thinking, straightforward."
+    },
+    "8": {
+      "roll": 9,
+      "result": "Teetotaler: abstains from drinking alcohol."
+    },
+    "9": {
+      "roll": 10,
+      "result": "Trusting: trusts others to behave correctly."
+    },
+    "10": {
+      "roll": 11,
+      "result": "Peaceful: serene of spirit."
+    },
+    "11": {
+      "roll": 12,
+      "result": "Peacemaker: attempts to calm others."
+    },
+    "12": {
+      "roll": 13,
+      "result": "Pious: reverently devoted to worship of God."
+    },
+    "13": {
+      "roll": 14,
+      "result": "Honest: always gives what is due."
+    },
+    "14": {
+      "roll": 15,
+      "result": "Loving: affectionately concerned for others."
+    },
+    "15": {
+      "roll": 16,
+      "result": "Giving: gives of self and possessions."
+    },
+    "16": {
+      "roll": 17,
+      "result": "Organized: everything has a place"
+    },
+    "17": {
+      "roll": 18,
+      "result": "Clean: practices good hygiene."
+    },
+    "18": {
+      "roll": 19,
+      "result": "Punctual: always on time"
+    },
+    "19": {
+      "roll": 20,
+      "result": "Self-confident: sure of self and abilities"
+    },
+    "20": {
+      "roll": 21,
+      "result": "Courageous: brave in the face of adversity."
+    },
+    "21": {
+      "roll": 22,
+      "result": "Respectful: shows respect for others."
+    },
+    "22": {
+      "roll": 23,
+      "result": "Calm: difficult to anger, a peaceful spirit."
+    },
+    "23": {
+      "roll": 24,
+      "result": "Patient: able to wait with calmness."
+    },
+    "24": {
+      "roll": 25,
+      "result": "Wise: understands what is true, right or lasting."
+    },
+    "25": {
+      "roll": 26,
+      "result": "Generous: willing to give more than fairly."
+    },
+    "26": {
+      "roll": 27,
+      "result": "Imaginative: a clever, resourceful mind."
+    },
+    "27": {
+      "roll": 28,
+      "result": "Forgiving: able to pardon faults in others."
+    },
+    "28": {
+      "roll": 29,
+      "result": "Virtuous: chaste, pure, of excellent morals."
+    },
+    "29": {
+      "roll": 30,
+      "result": "Dependable: does duties reliably"
+    },
+    "30": {
+      "roll": 31,
+      "result": "Well-mannered: polite, courteous"
+    },
+    "31": {
+      "roll": 32,
+      "result": "Benign: gentle, inoffensive"
+    },
+    "32": {
+      "roll": 33,
+      "result": "Friendly: warm and comforting."
+    },
+    "33": {
+      "roll": 34,
+      "result": "Humble: lack of pretense, not proud."
+    },
+    "34": {
+      "roll": 35,
+      "result": "Energetic: does things quickly, with verve."
+    },
+    "35": {
+      "roll": 36,
+      "result": "Truthful: always tells the truth."
+    },
+    "36": {
+      "roll": 37,
+      "result": "Cheerful: always happy and smiling."
+    },
+    "37": {
+      "roll": 38,
+      "result": "Enthusiastic: excited, can't wait to act."
+    },
+    "38": {
+      "roll": 39,
+      "result": "Thrifty: careful with money"
+    },
+    "39": {
+      "roll": 40,
+      "result": "Diplomatic: careful to say the right thing."
+    }
+  },
+  "648": {
+    "1": {
+      "roll": 2,
+      "result": "Pessimist: always see the bad side of things."
+    },
+    "2": {
+      "roll": 3,
+      "result": "Egoist: selfish concern for own welfare."
+    },
+    "3": {
+      "roll": 4,
+      "result": "Obstructive: acts to block other's actions."
+    },
+    "4": {
+      "roll": 5,
+      "result": "Cruel (*): cold hearted and hurtful."
+    },
+    "5": {
+      "roll": 6,
+      "result": "Careless: incautious in thought and deed."
+    },
+    "6": {
+      "roll": 7,
+      "result": "Thoughtless: rarely thinks of others feelings."
+    },
+    "7": {
+      "roll": 8,
+      "result": "Flippant: unable to be serious about anything."
+    },
+    "8": {
+      "roll": 9,
+      "result": "Drunkard: constantly overindulges in alcohol."
+    },
+    "9": {
+      "roll": 10,
+      "result": "Suspicious: trusts no one."
+    },
+    "10": {
+      "roll": 11,
+      "result": "Violent (*): seeks physical conflict."
+    },
+    "11": {
+      "roll": 12,
+      "result": "Argumentative: starts arguments and fights."
+    },
+    "12": {
+      "roll": 13,
+      "result": "Irreverent (*): mocks the gods."
+    },
+    "13": {
+      "roll": 14,
+      "result": "Cheat (*): shortchanges others of their due."
+    },
+    "14": {
+      "roll": 15,
+      "result": "Hateful (*): strongly dislikes others."
+    },
+    "15": {
+      "roll": 16,
+      "result": "Selfish: unwilling to share time and possessions."
+    },
+    "16": {
+      "roll": 17,
+      "result": "Slovenly: messy, nothing is ever put away."
+    },
+    "17": {
+      "roll": 18,
+      "result": "Filthy: knows nothing of hygiene."
+    },
+    "18": {
+      "roll": 19,
+      "result": "Tardy: always late."
+    },
+    "19": {
+      "roll": 20,
+      "result": "Self-doubting: unsure of self and abilities."
+    },
+    "20": {
+      "roll": 21,
+      "result": "Cowardly: afraid to face adversity."
+    },
+    "21": {
+      "roll": 22,
+      "result": "Disrespectful: does not show respect."
+    },
+    "22": {
+      "roll": 23,
+      "result": "Angry: spirit always unsettled, never at peace."
+    },
+    "23": {
+      "roll": 24,
+      "result": "Impatient: unable to wait with calmness."
+    },
+    "24": {
+      "roll": 25,
+      "result": "Foolish: unable to discern what is true or wise."
+    },
+    "25": {
+      "roll": 26,
+      "result": "Greedy: hoards all for self."
+    },
+    "26": {
+      "roll": 27,
+      "result": "Dull: a slow, uncreative mind."
+    },
+    "27": {
+      "roll": 28,
+      "result": "Vengeful: revenge is the way to punish faults."
+    },
+    "28": {
+      "roll": 29,
+      "result": "Immoral: lecherous, lawless, devoid of morals."
+    },
+    "29": {
+      "roll": 30,
+      "result": "Untrustworthy (*): not worth trusting."
+    },
+    "30": {
+      "roll": 31,
+      "result": "Rude: polite, courteous."
+    },
+    "31": {
+      "roll": 32,
+      "result": "Harsh: ungentle, sharp-tongued."
+    },
+    "32": {
+      "roll": 33,
+      "result": "Unfriendly: cold and distant."
+    },
+    "33": {
+      "roll": 34,
+      "result": "Egotistic: proud and conceited."
+    },
+    "34": {
+      "roll": 35,
+      "result": "Lazy: difficult to get motivated."
+    },
+    "35": {
+      "roll": 36,
+      "result": "Liar (*): hardly ever tells the truth."
+    },
+    "36": {
+      "roll": 37,
+      "result": "Morose: always gloomy and moody."
+    },
+    "37": {
+      "roll": 38,
+      "result": "Unenthusiastic: can't get excited."
+    },
+    "38": {
+      "roll": 39,
+      "result": "Spendthrift: spends money without thought."
+    },
+    "39": {
+      "roll": 40,
+      "result": "Tactless: speaks before thinking."
+    } 
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -5,15 +5,15 @@ Learning project to have better standards of writing python
 
 import random
 import textwrap
+import logging
 from tinydb import TinyDB, Query
 
-wrapper = textwrap.TextWrapper(width=60)
-db = TinyDB("data/legends.json")
+logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.DEBUG)
 
-
-genders = ["Female", "Male"]
-stats_lst = ["str", "dex", "int", "con", "cha", "wis"]
-
+wrapper     = textwrap.TextWrapper(width=60)
+db          = TinyDB("data/legends.json")
+genders     = ["Female", "Male"]
+stats_lst   = ["str", "dex", "int", "con", "cha", "wis"]
 
 def roll(to_roll, high, modifier=0):
     """ because adding #nosec everwhere would be a drag"""
@@ -43,6 +43,43 @@ def race_search():
 
     return result["race"], result["desc"]
 
+def base_culture():
+    cu_roll = roll(1, 10)
+    table = db.table("102")
+    result = Query()
+    result = table.search((result.low <= cu_roll) & (result.high >= cu_roll))[0]
+
+    return result["culture"], result["desc"], result["cumod"]
+
+def base_social(cumod):
+    try:
+        soc_roll = roll(1, 100) + int(cumod)
+        table = db.table("103")
+        result = Query()
+        result = table.search((result.low <= soc_roll) & (result.high >= soc_roll))[0]
+    except ValueError:
+        logging.error('Somehow the cumod is not an integer')
+        raise
+
+    return result["social"], result["desc"], result["somod"]
+
+def personal_trait():
+    trait_roll = roll(1, 100)
+    if trait_roll <= 50:
+        return 'No special personality trait'
+    elif 51 <= trait_roll <= 65:
+        table = db.table("318B")
+    elif 66 <= trait_roll <= 80:
+        table = db.table("647")
+    else:
+        table = db.table("648")
+
+    spec_trait = roll(2, 20)
+
+    result = Query()
+    result = table.search((result.roll == spec_trait))[0]
+    return result["result"]
+
 class NpcCard(object):
     gender = ''
     race = ''
@@ -54,11 +91,17 @@ class NpcCard(object):
         for i in stats_lst:
             self.attributes[i] = roll(3, 6)
         self.race, self.race_desc = race_search()
-    
+        self.trait = personal_trait()
+        self.culture, self.cu_desc, self.cumod = base_culture()
+        self.socmod, self.socdesc, self.somod = base_social(self.cumod)
+
     def print(self):
         card = '''\
         Race: {}
-        Racial description: {}
+
+        Racial description: 
+            {}
+
         Gender: {}
 
             Str: {}
@@ -70,14 +113,23 @@ class NpcCard(object):
 
         Background:
 
+            Personality: {}
+
+            Base Culture: {}
+            Base Culture description: 
+                {}
+
+            Social Standing: {}
+            Social Description:
+                {}
         '''.format(self.race, self.race_desc, self.gender, self.attributes['str'], self.attributes['dex'], 
-            self.attributes['con'], self.attributes['int'], self.attributes['wis'], self.attributes['cha'])
+            self.attributes['con'], self.attributes['int'], self.attributes['wis'], self.attributes['cha'],
+            self.trait, self.culture, self.cu_desc, self.socmod, self.socdesc)
 
         print(textwrap.dedent(card))
 
 
 if __name__ == "__main__":
-    print("Starting NPC maker")
+    logging.info("Starting NPC maker")
     NPC = NpcCard()
     NPC.print()
-

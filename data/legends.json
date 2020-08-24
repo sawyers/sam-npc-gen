@@ -100,7 +100,7 @@
       "cumod": 7,
       "desc": "These are Civilized Cultures past the peak of their prime. Decay has begun to set in at all levels and the people have become hedonistic and jaded. The government seems to have become self-perpetuating and careless of the people's needs. Although government support of the Poor is predominant, previously common civil liberties and services begin to disappear. Inflation is often rampant."
     }
-  },  
+  },
   "103": {
     "1": {
       "low": -2,
@@ -151,8 +151,7 @@
       "somod": 5,
       "desc": "The character who rolls this is a member of a noble family, the aristocracy of the land. These folk have fancy titles, and are generally better off than their fellows."
     }
-  }, 
-  "114B": {},
+  },
   "318B": {
     "1": {
       "roll": 2,
@@ -309,7 +308,7 @@
     "39": {
       "roll": 40,
       "result": "Atheistic: denies existence of the supernatural"
-    } 
+    }
   },
   "647": {
     "1": {
@@ -625,25 +624,6 @@
     "39": {
       "roll": 40,
       "result": "Tactless: speaks before thinking."
-    } 
+    }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

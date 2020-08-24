@@ -5,8 +5,6 @@ repos:
       - id: end-of-file-fixer
       - id: trailing-whitespace
       - id: check-json
-      - id: pretty-format-json
-        exclude: .vscode/settings.json,Pipfile.lock
       - id: check-added-large-files
       - id: detect-private-key
       - id: detect-aws-credentials
@@ -16,8 +14,8 @@ repos:
     rev: "19.10b0"
     hooks:
       - id: black
+        language_version: python3 # Should be a command that runs python3.6+
   - repo: https://github.com/PyCQA/bandit
     rev: "1.6.2" # Update me!
     hooks:
       - id: bandit
-

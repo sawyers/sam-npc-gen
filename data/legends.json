@@ -1,0 +1,629 @@
+{
+  "101": {
+    "1": {
+      "low": 1,
+      "high": 14,
+      "race": "human",
+      "desc": "The most common race in many game systems."
+    },
+    "2": {
+      "low": 15,
+      "high": 16,
+      "race": "elf",
+      "desc": "A member of a race of beautiful humanoids, often referred to as an elder race, possibly a branch of faery. They are associated with forests, have a natural affinity for magic and life-spans far longer than humans. Elves can be aloof and distant, and may consider other races to be their inferior."
+    },
+    "3": {
+      "low": 17,
+      "high": 17,
+      "race": "dwarf",
+      "desc": "Stalwart, short, stocky humanoids, with long beards and dour personalities. They are longer-lived than men; are excellent metal and stone workers; renowned as fighters; and often found in underground cities. Dwarves can be gruff, grumpy, gloomy or rowdy, often trusting none but themselves."
+    },
+    "4": {
+      "low": 18,
+      "high": 18,
+      "race": "halfling",
+      "desc": "Barely waist-high on humans, this is a pleasant race of sturdy farmers and shopkeepers who feel more comfortable with their furry feet propped up in front of a fireplace than anywhere else."
+    },
+    "5": {
+      "low": 19,
+      "high": 19,
+      "race": "half elf",
+      "desc": "A human and elf crossbreed. Combines the vitality of humanity with elvenkind's beauty and eldritch nature. They are likeable folk, but are often outcasts, perceived as different in an unacceptable way."
+    },
+    "6": {
+      "low": 20,
+      "high": 20,
+      "race": "rare",
+      "desc": "Subrace",
+      "next_table": "101a"
+    }
+  },
+  "101a": {
+    "1": {
+      "low": 1,
+      "high": 3,
+      "race": "beastman",
+      "desc": "Part man, part beast. Includes minotaurs, centaurs, satyrs, fauns, and goatmen. A beast man's personality reflects its bestial nature. Minotaurs rush headlong into things, centaurs have the nobility (or stupidity) associated with horses, goatmen and satyrs have certain appetites."
+    },
+    "2": {
+      "low": 4,
+      "high": 5,
+      "race": "reptileman",
+      "desc": "Primitive humanoid lizard-like creatures who often dwell in swamps and marshes. May be degenerate survivors of an ancient races. Includes dragon and serpent men (who are usually evil). Of all the given races, reptilemen are the most alien. They have exotic mannerisms and, weird, unexplainable behavior."
+    },
+    "3": {
+      "low": 6,
+      "high": 6,
+      "race": "orc",
+      "desc": "A degenerate humanoid race, possibly an evil offshoot of elf kind. Noted for vile habits, coarse manners, and rough way of life, orcs are cruel, self-centered and deceitful, always in fear of being punished for every action"
+    },
+    "4": {
+      "low": 7,
+      "high": 10,
+      "race": "half orc",
+      "desc": "A crossbreed of human and orc. May look nearly human, but often partake of the orc's baser nature, with a tendency towards evil - coarse and callous, but tempered with human emotion and logic."
+    }
+  },
+  "102": {
+    "1": {
+      "low": 1,
+      "high": 1,
+      "culture": "primitive",
+      "cumod": -3,
+      "desc": "Primitives do not read and write their own language and do not form insignificant permanent settlements. The chief industry of Primitives is the procurement of food, usually by hunting and gathering. They do not work metal and organized farming is still rare. Political units are the family and the clan. Rulers are the most powerful hunters of the group. The elderly are revered for their wisdom."
+    },
+    "2": {
+      "low": 2,
+      "high": 3,
+      "culture": "nomad",
+      "cumod": 0,
+      "desc": "Nomads rely heavily on livestock that can move as seasons and resources dictate and are rarely agricultural. Most Nomads are mounted or use beasts of burden to transport belongings. Nomads organize along family group lines, do not settle permanently, and do not develop abstract writing beyond the level of pictographs. In most Nomad tribes and clans, all adult males are warriors. The Nomads may also be skilled in other crafts or professions (rarely metal-working), but skill in combat is a necessity for survival."
+    },
+    "3": {
+      "low": 4,
+      "high": 6,
+      "culture": "barbarian",
+      "cumod": 2,
+      "desc": "Barbarians are generally thought of as crude and semiliterate. In fact, they are not. Barbarian cultures are dynamic, often highly educated societies with a keen sense of propriety and law and order. In a sense, they are pre-Civilized - organized, but not yet developed (or degenerated) to the point where powerful central governments are needed. They normally have a solid economy with defined division of labor (occupational specialization). Organized religion is often a central pillar of their society (and may dominate it). Barbarians are generally led by strong charismatic warriors, but much of the people are governed by extended family groupings such as clans. Like the Nomads, most adult males are warriors in addition to any other profession that they follow (although, like the Vikings, they may put this skill to work pillaging as opposed to warring). They may live in small cities, which are often not much more than semipermanent camps"
+    },
+    "4": {
+      "low": 7,
+      "high": 9,
+      "culture": "civilized",
+      "cumod": 4,
+      "desc": "Civilized cultures are most often noted for central governments (which seem to exist solely for the purpose of collecting taxes) and large cities and stocked with the dubious benefits of civilization - table manners, royal dynasties, wizards, professional thieves, naval warfare, civil engineering and of course, tax accountants. The hereditary warrior classes have become landed gentlefolk as knights and samurai are replaced by paid soldiery."
+    },
+    "5": {
+      "low": 10,
+      "high": 10,
+      "culture": "civilized-decadent",
+      "cumod": 7,
+      "desc": "These are Civilized Cultures past the peak of their prime. Decay has begun to set in at all levels and the people have become hedonistic and jaded. The government seems to have become self-perpetuating and careless of the people's needs. Although government support of the Poor is predominant, previously common civil liberties and services begin to disappear. Inflation is often rampant."
+    }
+  },
+  "103": {
+    "1": {
+      "low": -2,
+      "high": 12,
+      "social": "destitute",
+      "somod": -3,
+      "desc": "These people are considered the dregs of society. They own no property, and may have no fixed home. Some perform no real work and are often unemployable. Others are in bond to a master and live at his whim. Sill more, especially primitives, barely live off what meager bounty the land provides. The chief industry of this class is foraging and scavenging. This is a survival level - no luxuries. Money is rare for the destitute and all income goes toward merely staying alive. Includes non-guild beggars and some other street people, serfs, sharecroppers, rural bandits, some slaves and unfortunate primitives."
+    },
+    "2": {
+      "low": 13,
+      "high": 40,
+      "social": "poor",
+      "somod": -1,
+      "desc": "Poor people have comparatively very low income. They usually do not or cannot own property. Homes are usually of lesser quality, sometimes due to uncaring landlords who may also be the poor person's employer. Luxuries often include nice food, heat in winter, pets and clean water. In some societies, the poor are but a step above slaves. Includes most non-leader nomads, primitives, peasants, uncivilized warriors, etc."
+    },
+    "3": {
+      "low": 41,
+      "high": 84,
+      "social": "comfortable",
+      "somod": 0,
+      "desc": "This is the middle class of any Culture, regardless of the average wealth of its citizens. These folk usually live in clean, nicely apportioned homes or apartments, often in better neighborhoods. They eat regularly and occasionally very well. Children are often educated by tutors. Luxuries include warm houses, good food, the ability to hire menial services, nice clothing, and family heirloom books. They may own conservative forms of transport - a buggy or horse. Includes 'impoverished' nobility, university professors, scribes, some craftsmen, highly skilled laborers, lower government officials, lower-ranking military officers, lesser priests and magicians, shopkeepers, and prominent warriors and lesser chieftains"
+    },
+    "4": {
+      "low": 85,
+      "high": 85,
+      "social": "placeholder, roll again",
+      "somod": 0,
+      "desc": ""
+    },
+    "5": {
+      "low": 86,
+      "high": 94,
+      "social": "well-to-do",
+      "somod": 2,
+      "desc": "These are the upper end of the middle or merchant class in Barbarian and Civilized cultures. They typically own larger homes, have a household servant (a cook and or maid), have private transportation, and travel abroad. They may own more than one home in more than one city. Their children are privately educated. Luxuries include elegant furnishings, artwork, libraries, parties, fine clothing, and occasional exotic foods. This class includes younger offspring of Nobility, successful craftsmen, high-ranking military officers, merchants, ship owners, successful magicians, etc. "
+    },
+    "6": {
+      "low": 95,
+      "high": 98,
+      "social": "wealthy",
+      "somod": 4,
+      "desc": "These people are rich. They own large estates, have many servants, plush furnishings and large holdings of land. They usually make their money from real estate holdings, commodities trading and gouging poorer people. What most lower social levels see as luxuries, they take for granted. This class includes most titled nobility, merchant princes, high priests of rich cults, owners of very successful large companies, government leaders, very successful magicians, and leaders of criminal organizations."
+    },
+    "7": {
+      "low": 99,
+      "high": 107,
+      "social": "nobility",
+      "somod": 5,
+      "desc": "The character who rolls this is a member of a noble family, the aristocracy of the land. These folk have fancy titles, and are generally better off than their fellows."
+    }
+  },
+  "318B": {
+    "1": {
+      "roll": 2,
+      "result": "Curious: inquisitive, needs to know"
+    },
+    "2": {
+      "roll": 3,
+      "result": "Hedonist: pleasure is the most important thing"
+    },
+    "3": {
+      "roll": 4,
+      "result": "Precise: always exacting"
+    },
+    "4": {
+      "roll": 5,
+      "result": "Studious: studies often, pays attention to detail"
+    },
+    "5": {
+      "roll": 6,
+      "result": "Mysterious: has an air of mystery about him"
+    },
+    "6": {
+      "roll": 7,
+      "result": "Loquacious: talks and talks and talks and ..."
+    },
+    "7": {
+      "roll": 8,
+      "result": "Silent: rarely talks"
+    },
+    "8": {
+      "roll": 9,
+      "result": "Foppish: vain, preoccupied with appearance."
+    },
+    "9": {
+      "roll": 10,
+      "result": "Immaculate: clean and orderly"
+    },
+    "10": {
+      "roll": 11,
+      "result": "Rough: unpolished, unrefined"
+    },
+    "11": {
+      "roll": 12,
+      "result": "Skeptic: disbelieving of things unproven"
+    },
+    "12": {
+      "roll": 13,
+      "result": "Immature: acts younger than age"
+    },
+    "13": {
+      "roll": 14,
+      "result": "Even-tempered: rarely angry or over joyous"
+    },
+    "14": {
+      "roll": 15,
+      "result": "Rash: acts before thinking"
+    },
+    "15": {
+      "roll": 16,
+      "result": "Extroverted: outgoing"
+    },
+    "16": {
+      "roll": 17,
+      "result": "Introverted: focus one's interests in oneself"
+    },
+    "17": {
+      "roll": 18,
+      "result": "Materialistic: puts emphasis on possessions"
+    },
+    "18": {
+      "roll": 19,
+      "result": "Aesthetic: possessions are unnecessary"
+    },
+    "19": {
+      "roll": 20,
+      "result": "Amoral: no care for right or wrong"
+    },
+    "20": {
+      "roll": 21,
+      "result": "Dreamy: a distant daydreamer"
+    },
+    "21": {
+      "roll": 22,
+      "result": "Creative: able to make something out of nothing"
+    },
+    "22": {
+      "roll": 23,
+      "result": "Leader: takes initiative, can take command"
+    },
+    "23": {
+      "roll": 24,
+      "result": "Follower: prefers to let others lead"
+    },
+    "24": {
+      "roll": 25,
+      "result": "Emotional: rarely keeps emotions in check"
+    },
+    "25": {
+      "roll": 26,
+      "result": "Emotionless: rarely shows emotions"
+    },
+    "26": {
+      "roll": 27,
+      "result": "Humorous: appreciates humor and likes to joke"
+    },
+    "27": {
+      "roll": 28,
+      "result": "Grim: unsmiling, humorless, stern of purpose"
+    },
+    "28": {
+      "roll": 29,
+      "result": "Conservative: restrained, opposed to change"
+    },
+    "29": {
+      "roll": 30,
+      "result": "Liberal: tolerant of others, open to change"
+    },
+    "30": {
+      "roll": 31,
+      "result": "Aggressive: assertive, bold, enterprising"
+    },
+    "31": {
+      "roll": 32,
+      "result": "Passive: accepts things without resisting them"
+    },
+    "32": {
+      "roll": 33,
+      "result": "Self sufficient: does not need others"
+    },
+    "33": {
+      "roll": 34,
+      "result": "Dependent: needs others around him"
+    },
+    "34": {
+      "roll": 35,
+      "result": "Romantic: given to feelings of romance"
+    },
+    "35": {
+      "roll": 36,
+      "result": "Logical: uses deductive reasoning"
+    },
+    "36": {
+      "roll": 37,
+      "result": "Illogical: may not use reason to make decisions"
+    },
+    "37": {
+      "roll": 38,
+      "result": "Frivolous: flighty, harebrained, rarely serious"
+    },
+    "38": {
+      "roll": 39,
+      "result": "Aloof: distant from others, even cold"
+    },
+    "39": {
+      "roll": 40,
+      "result": "Atheistic: denies existence of the supernatural"
+    }
+  },
+  "647": {
+    "1": {
+      "roll": 2,
+      "result": "Optimist: always see the good side of things."
+    },
+    "2": {
+      "roll": 3,
+      "result": "Altruist: selfless concern for others' welfare."
+    },
+    "3": {
+      "roll": 4,
+      "result": "Helpful: helps others in need."
+    },
+    "4": {
+      "roll": 5,
+      "result": "Kindly: warmhearted and friendly."
+    },
+    "5": {
+      "roll": 6,
+      "result": "Careful: cautious in thought and deed"
+    },
+    "6": {
+      "roll": 7,
+      "result": "Considerate: thinks of others' feelings."
+    },
+    "7": {
+      "roll": 8,
+      "result": "Sober: serious, plain-thinking, straightforward."
+    },
+    "8": {
+      "roll": 9,
+      "result": "Teetotaler: abstains from drinking alcohol."
+    },
+    "9": {
+      "roll": 10,
+      "result": "Trusting: trusts others to behave correctly."
+    },
+    "10": {
+      "roll": 11,
+      "result": "Peaceful: serene of spirit."
+    },
+    "11": {
+      "roll": 12,
+      "result": "Peacemaker: attempts to calm others."
+    },
+    "12": {
+      "roll": 13,
+      "result": "Pious: reverently devoted to worship of God."
+    },
+    "13": {
+      "roll": 14,
+      "result": "Honest: always gives what is due."
+    },
+    "14": {
+      "roll": 15,
+      "result": "Loving: affectionately concerned for others."
+    },
+    "15": {
+      "roll": 16,
+      "result": "Giving: gives of self and possessions."
+    },
+    "16": {
+      "roll": 17,
+      "result": "Organized: everything has a place"
+    },
+    "17": {
+      "roll": 18,
+      "result": "Clean: practices good hygiene."
+    },
+    "18": {
+      "roll": 19,
+      "result": "Punctual: always on time"
+    },
+    "19": {
+      "roll": 20,
+      "result": "Self-confident: sure of self and abilities"
+    },
+    "20": {
+      "roll": 21,
+      "result": "Courageous: brave in the face of adversity."
+    },
+    "21": {
+      "roll": 22,
+      "result": "Respectful: shows respect for others."
+    },
+    "22": {
+      "roll": 23,
+      "result": "Calm: difficult to anger, a peaceful spirit."
+    },
+    "23": {
+      "roll": 24,
+      "result": "Patient: able to wait with calmness."
+    },
+    "24": {
+      "roll": 25,
+      "result": "Wise: understands what is true, right or lasting."
+    },
+    "25": {
+      "roll": 26,
+      "result": "Generous: willing to give more than fairly."
+    },
+    "26": {
+      "roll": 27,
+      "result": "Imaginative: a clever, resourceful mind."
+    },
+    "27": {
+      "roll": 28,
+      "result": "Forgiving: able to pardon faults in others."
+    },
+    "28": {
+      "roll": 29,
+      "result": "Virtuous: chaste, pure, of excellent morals."
+    },
+    "29": {
+      "roll": 30,
+      "result": "Dependable: does duties reliably"
+    },
+    "30": {
+      "roll": 31,
+      "result": "Well-mannered: polite, courteous"
+    },
+    "31": {
+      "roll": 32,
+      "result": "Benign: gentle, inoffensive"
+    },
+    "32": {
+      "roll": 33,
+      "result": "Friendly: warm and comforting."
+    },
+    "33": {
+      "roll": 34,
+      "result": "Humble: lack of pretense, not proud."
+    },
+    "34": {
+      "roll": 35,
+      "result": "Energetic: does things quickly, with verve."
+    },
+    "35": {
+      "roll": 36,
+      "result": "Truthful: always tells the truth."
+    },
+    "36": {
+      "roll": 37,
+      "result": "Cheerful: always happy and smiling."
+    },
+    "37": {
+      "roll": 38,
+      "result": "Enthusiastic: excited, can't wait to act."
+    },
+    "38": {
+      "roll": 39,
+      "result": "Thrifty: careful with money"
+    },
+    "39": {
+      "roll": 40,
+      "result": "Diplomatic: careful to say the right thing."
+    }
+  },
+  "648": {
+    "1": {
+      "roll": 2,
+      "result": "Pessimist: always see the bad side of things."
+    },
+    "2": {
+      "roll": 3,
+      "result": "Egoist: selfish concern for own welfare."
+    },
+    "3": {
+      "roll": 4,
+      "result": "Obstructive: acts to block other's actions."
+    },
+    "4": {
+      "roll": 5,
+      "result": "Cruel (*): cold hearted and hurtful."
+    },
+    "5": {
+      "roll": 6,
+      "result": "Careless: incautious in thought and deed."
+    },
+    "6": {
+      "roll": 7,
+      "result": "Thoughtless: rarely thinks of others feelings."
+    },
+    "7": {
+      "roll": 8,
+      "result": "Flippant: unable to be serious about anything."
+    },
+    "8": {
+      "roll": 9,
+      "result": "Drunkard: constantly overindulges in alcohol."
+    },
+    "9": {
+      "roll": 10,
+      "result": "Suspicious: trusts no one."
+    },
+    "10": {
+      "roll": 11,
+      "result": "Violent (*): seeks physical conflict."
+    },
+    "11": {
+      "roll": 12,
+      "result": "Argumentative: starts arguments and fights."
+    },
+    "12": {
+      "roll": 13,
+      "result": "Irreverent (*): mocks the gods."
+    },
+    "13": {
+      "roll": 14,
+      "result": "Cheat (*): shortchanges others of their due."
+    },
+    "14": {
+      "roll": 15,
+      "result": "Hateful (*): strongly dislikes others."
+    },
+    "15": {
+      "roll": 16,
+      "result": "Selfish: unwilling to share time and possessions."
+    },
+    "16": {
+      "roll": 17,
+      "result": "Slovenly: messy, nothing is ever put away."
+    },
+    "17": {
+      "roll": 18,
+      "result": "Filthy: knows nothing of hygiene."
+    },
+    "18": {
+      "roll": 19,
+      "result": "Tardy: always late."
+    },
+    "19": {
+      "roll": 20,
+      "result": "Self-doubting: unsure of self and abilities."
+    },
+    "20": {
+      "roll": 21,
+      "result": "Cowardly: afraid to face adversity."
+    },
+    "21": {
+      "roll": 22,
+      "result": "Disrespectful: does not show respect."
+    },
+    "22": {
+      "roll": 23,
+      "result": "Angry: spirit always unsettled, never at peace."
+    },
+    "23": {
+      "roll": 24,
+      "result": "Impatient: unable to wait with calmness."
+    },
+    "24": {
+      "roll": 25,
+      "result": "Foolish: unable to discern what is true or wise."
+    },
+    "25": {
+      "roll": 26,
+      "result": "Greedy: hoards all for self."
+    },
+    "26": {
+      "roll": 27,
+      "result": "Dull: a slow, uncreative mind."
+    },
+    "27": {
+      "roll": 28,
+      "result": "Vengeful: revenge is the way to punish faults."
+    },
+    "28": {
+      "roll": 29,
+      "result": "Immoral: lecherous, lawless, devoid of morals."
+    },
+    "29": {
+      "roll": 30,
+      "result": "Untrustworthy (*): not worth trusting."
+    },
+    "30": {
+      "roll": 31,
+      "result": "Rude: polite, courteous."
+    },
+    "31": {
+      "roll": 32,
+      "result": "Harsh: ungentle, sharp-tongued."
+    },
+    "32": {
+      "roll": 33,
+      "result": "Unfriendly: cold and distant."
+    },
+    "33": {
+      "roll": 34,
+      "result": "Egotistic: proud and conceited."
+    },
+    "34": {
+      "roll": 35,
+      "result": "Lazy: difficult to get motivated."
+    },
+    "35": {
+      "roll": 36,
+      "result": "Liar (*): hardly ever tells the truth."
+    },
+    "36": {
+      "roll": 37,
+      "result": "Morose: always gloomy and moody."
+    },
+    "37": {
+      "roll": 38,
+      "result": "Unenthusiastic: can't get excited."
+    },
+    "38": {
+      "roll": 39,
+      "result": "Spendthrift: spends money without thought."
+    },
+    "39": {
+      "roll": 40,
+      "result": "Tactless: speaks before thinking."
+    }
+  }
+}

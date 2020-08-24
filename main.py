@@ -10,7 +10,7 @@ from tinydb import TinyDB, Query
 
 logging.basicConfig(format="%(levelname)s:%(message)s", level=logging.DEBUG)
 
-wrapper = textwrap.TextWrapper(width=60)
+wrapper = textwrap.TextWrapper()
 db = TinyDB("data/legends.json")
 genders = ["Female", "Male"]
 stats_lst = ["str", "dex", "int", "con", "cha", "wis"]
@@ -42,7 +42,9 @@ def race_search():
     result = Query()
     result = table.search((result.low <= race_roll) & (result.high >= race_roll))[0]
 
-    return result["race"], result["desc"]
+    detented_text = textwrap.dedent(result["desc"].strip())
+    desc = textwrap.fill(detented_text, width=70)
+    return result["race"], desc
 
 
 def base_culture():
@@ -52,7 +54,10 @@ def base_culture():
     result = Query()
     result = table.search((result.low <= cu_roll) & (result.high >= cu_roll))[0]
 
-    return result["culture"], result["desc"], result["cumod"]
+    detented_text = textwrap.dedent(result["desc"].strip())
+    desc = textwrap.fill(detented_text, width=70)
+
+    return result["culture"], desc, result["cumod"]
 
 
 def base_social(cumod):
@@ -65,12 +70,14 @@ def base_social(cumod):
     except ValueError:
         logging.error("Somehow the cumod is not an integer")
         raise
+    detented_text = textwrap.dedent(result["desc"].strip())
+    desc = textwrap.fill(detented_text, width=70)
 
-    return result["social"], result["desc"], result["somod"]
+    return result["social"], desc, result["somod"]
 
 
 def personal_trait():
-    """Basic personality trait"""
+    """Basic personality"""
     trait_roll = roll(1, 100)
     if trait_roll <= 50:
         return "No special personality trait"
@@ -105,31 +112,34 @@ class NpcCard(object):
 
     def print(self):
         card = """\
-        Race: {}
+Race: {}
 
-        Racial description:
-            {}
+Racial description:
 
-        Gender: {}
+{}
 
-            Str: {}
-            Dex: {}
-            Con: {}
-            Int: {}
-            Wis: {}
-            Cha: {}
+Gender: {}
 
-        Background:
+    Str: {}
+    Dex: {}
+    Con: {}
+    Int: {}
+    Wis: {}
+    Cha: {}
 
-            Personality: {}
+Background:
 
-            Base Culture: {}
-            Base Culture description:
-                {}
+Personality: {}
 
-            Social Standing: {}
-            Social Description:
-                {}
+Base Culture: {}
+Base Culture description:
+
+{}
+
+Social Standing: {}
+Social Description:
+
+{}
         """.format(
             self.race,
             self.race_desc,

@@ -1,0 +1,17 @@
+[[package]]
+category = "main"
+description = "TinyDB is a tiny, document oriented database optimized for your happiness :)"
+name = "tinydb"
+optional = false
+python-versions = ">=3.5,<4.0"
+version = "4.1.1"
+
+[metadata]
+content-hash = "0d85dcb952b5ddf551b3c06676bfd2c838814df9b8369930428bede5c8c76ff0"
+python-versions = "^3.8"
+
+[metadata.files]
+tinydb = [
+    {file = "tinydb-4.1.1-py3-none-any.whl", hash = "sha256:68eb9d1b32931ea657319c7dff70c0d735fc10ecbde29c824a2a5e1333b8ed49"},
+    {file = "tinydb-4.1.1.tar.gz", hash = "sha256:1b8d7308ba2fe6d582c6ae69f33c62013053939f7ab8d1787b1e15950566a202"},
+]
